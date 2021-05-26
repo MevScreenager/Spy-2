@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/colorDark">
+    <TextView
+            android:textColor="@color/colorTheme"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowDx="5"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+
+            android:text="Кто шпион?"
+            android:textSize="60sp"
+            android:id="@+id/WhoIsTheSpy"
+            android:textStyle="bold"
+            android:textFontWeight="@android:integer/config_mediumAnimTime"
+            android:layout_width="335dp"
+            android:layout_height="88dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.656"/>
+    <RelativeLayout android:layout_width="222dp" android:layout_height="37dp"
+                    android:id="@+id/RelativeLayoutForBack"
+                    app:layout_constraintTop_toBottomOf="@+id/WhoIsTheSpy" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.084">
+        <ImageButton
+                android:background="@color/colorDark"
+                android:onClick="onClickStartBack_2"
+                android:clickable="true"
+                android:tint="@color/colorTheme"
+                android:layout_width="55dp"
+                android:layout_height="38dp" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/act_setsBack"
+                android:focusable="true"/>
+        <TextView
+                android:textColor="@color/colorTheme"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:onClick="onClickStartBack_2"
+                android:text="Назад"
+                android:layout_width="108dp"
+                android:layout_height="37dp" android:id="@+id/back"
+                android:layout_toEndOf="@+id/act_setsBack" android:layout_toRightOf="@+id/act_setsBack"/>
+    </RelativeLayout>
+    <TextView
+            android:text="Слово"
+
+            android:textStyle="normal"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowDx="5"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+
+            android:textSize="45sp"
+            android:textColor="@color/colorTheme"
+            android:layout_width="201dp"
+            android:layout_height="70dp" android:id="@+id/Word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WhoIsTheSpy"
+            app:layout_constraintVertical_bias="0.14"/>
+    <EditText
+            android:textSize="30sp"
+            android:textColorHint="@color/colorYellow"
+            android:textColor="@color/colorYellow"
+            android:backgroundTint="@color/colorYellow"
+            android:hint="Ваше слово..."
+
+            android:textStyle="normal"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowDx="5"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+
+            android:layout_width="298dp"
+            android:layout_height="53dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextInActivity_Word"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Word" app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintVertical_bias="0.07"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

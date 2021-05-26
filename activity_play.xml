@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/colorDark" android:id="@+id/backInActivity_Main">
+    <TextView
+            android:textColor="@color/colorTheme"
+            android:shadowColor="@color/colorPrimary"
+            android:shadowDx="5"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+
+            android:text="Кто шпион?"
+            android:textSize="60sp"
+            android:id="@+id/WhoIsTheSpy"
+            android:textStyle="bold"
+            android:textFontWeight="@android:integer/config_mediumAnimTime"
+            android:layout_width="335dp"
+            android:layout_height="88dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.656"/>
+    <RelativeLayout android:layout_width="222dp" android:layout_height="37dp"
+                    android:id="@+id/RelativeLayoutForBack"
+                    app:layout_constraintTop_toBottomOf="@+id/WhoIsTheSpy" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+                    app:layout_constraintHorizontal_bias="0.084">
+        <ImageButton
+                android:background="@color/colorDark"
+                android:onClick="onClickStartBack"
+                android:clickable="true"
+                android:tint="@color/colorTheme"
+                android:layout_width="55dp"
+                android:layout_height="38dp" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/act_setsBack"
+                android:focusable="true"/>
+        <TextView
+                android:textColor="@color/colorTheme"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:onClick="onClickStartBack"
+                android:text="Назад"
+                android:layout_width="108dp"
+                android:layout_height="37dp" android:id="@+id/back"
+                android:layout_toEndOf="@+id/act_setsBack" android:layout_toRightOf="@+id/act_setsBack"/>
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="465dp" app:srcCompat="@drawable/circuilrect" android:id="@+id/act_playBackground1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintVertical_bias="0.808"/>
+    <ImageView
+            android:onClick="next"
+            android:layout_width="300dp"
+            android:layout_height="465dp" app:srcCompat="@drawable/circuilrect" android:id="@+id/act_playBackground2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintVertical_bias="0.687"/>
+    <TextView
+            android:textColor="@color/colorTheme"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="next"
+
+            android:text="Игрок 1"
+            android:layout_width="264dp"
+            android:layout_height="70dp" android:id="@+id/act_PlayPlayer"
+            app:layout_constraintTop_toTopOf="@+id/act_playBackground2"
+            app:layout_constraintBottom_toBottomOf="@+id/act_playBackground2"
+            app:layout_constraintEnd_toEndOf="@+id/act_playBackground2"
+            app:layout_constraintStart_toStartOf="@+id/act_playBackground2" app:layout_constraintHorizontal_bias="0.527"
+            app:layout_constraintVertical_bias="0.141"/>
+    <TextView
+            android:textColor="@color/colorTheme"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:onClick="next"
+
+            android:text="Нажмите, чтобы узнать свою роль"
+            android:layout_width="250dp"
+            android:layout_height="131dp" android:id="@+id/act_playRole"
+            app:layout_constraintTop_toTopOf="@+id/act_playBackground2"
+            app:layout_constraintBottom_toBottomOf="@+id/act_playBackground2"
+            app:layout_constraintEnd_toEndOf="@+id/act_playBackground2"
+            app:layout_constraintStart_toStartOf="@+id/act_playBackground2" app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintVertical_bias="0.555"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
